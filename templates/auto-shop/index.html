@@ -52,9 +52,14 @@
   /* ---- Header ---- */
   header{background:#fff;border-bottom:1px solid var(--line);position:sticky;top:0;z-index:50}
   .gs-bar + header{top:38px}
-  .nav{display:flex;align-items:center;justify-content:space-between;gap:1rem;padding:.9rem 0}
+  .nav{display:flex;align-items:center;justify-content:space-between;gap:1rem;
+    padding-top:.9rem;padding-bottom:.9rem}
+  /* The sticky call bar covers phoning on mobile, so the header button would only
+     crowd a long business name out of the 20px gutter. Desktop brings it back. */
+  .nav > .btn{display:none}
   .brand{font-family:'Barlow Condensed',sans-serif;font-size:1.5rem;font-weight:700;
-    text-transform:uppercase;color:var(--ink);text-decoration:none;letter-spacing:.01em}
+    text-transform:uppercase;color:var(--ink);text-decoration:none;letter-spacing:.01em;
+    min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
   .brand span{color:var(--accent)}
   .nav-links{display:none;gap:1.75rem;font-size:.92rem;font-weight:500}
   .nav-links a{text-decoration:none;color:var(--body)}
@@ -137,6 +142,7 @@
   @media (min-width:720px){
     .grid{grid-template-columns:repeat(3,1fr)}
     .nav-links{display:flex}
+    .nav > .btn{display:inline-block}
     .contact-grid{grid-template-columns:1fr 1.1fr;gap:3.5rem}
     .callbar{display:none}
     body{padding-bottom:0}
