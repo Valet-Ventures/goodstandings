@@ -16,7 +16,7 @@
   "PHONE_HREF": "+15556402210",
   "EMAIL": "hello@wrenandash.example",
   "ADDRESS": "27 Lindenwood Avenue, Suite 3, Ashford Park",
-  "HOURS": "Tue-Fri 9am-6pm · Sat 9am-2pm · Closed Sun & Mon",
+  "HOURS": "Tue-Fri 9am-6pm \u00b7 Sat 9am-2pm \u00b7 Closed Sun & Mon",
   "SERVICES_INTRO": "We keep the menu deliberately short. Everything here is something we do often enough to do exceptionally well.",
   "SERVICE_1_TITLE": "Wrinkle relaxers",
   "SERVICE_1_BODY": "Assessed in movement, not at rest, so you keep your expressions. We start conservative and refine at your two-week review.",
@@ -43,5 +43,9 @@
   "REVIEW_2_NAME": "Priya S.",
   "REVIEW_3_TEXT": "Subtle, even, and nobody has asked what I had done. They just keep asking whether I have been on holiday.",
   "REVIEW_3_NAME": "Jordan M.",
-  "CONTACT_INTRO": "Consultations are 30 minutes, unhurried, and there is no obligation to book anything on the day."
+  "CONTACT_INTRO": "Consultations are 30 minutes, unhurried, and there is no obligation to book anything on the day.",
+  "BOOKING_OPEN_DAYS": "2,3,4,5,6",
+  "BOOKING_START_HOUR": "9",
+  "BOOKING_END_HOUR": "18",
+  "BOOKING_SLOT_MINUTES": "60"
 }

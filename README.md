@@ -40,6 +40,29 @@ npx serve public
 
 Not `open index.html`: demo pages link to `/` for the root, which only resolves over http.
 
+## Booking requests (med-spa template)
+
+The med-spa template includes a slot picker. Four fields in the demo JSON drive it:
+
+```
+BOOKING_OPEN_DAYS      "2,3,4,5,6"   weekday numbers, 0=Sun. Must match HOURS.
+BOOKING_START_HOUR     "9"           first slot starts here
+BOOKING_END_HOUR       "18"          last slot ENDS here
+BOOKING_SLOT_MINUTES   "60"          slot length
+```
+
+It offers the next 21 days, skips closed days, and never offers today.
+
+**It submits a request, not a booking.** The page has no access to the practice's
+calendar, so every slot shows as free and the copy under the button says the time
+is not held until the practice confirms. Do not reword that into a confirmation,
+and do not fake "taken" slots to look busy: a patient can act on either, and it
+is the practice that eats the empty chair.
+
+**Never put medical information in the form.** Name, phone and treatment interest
+only. Netlify Forms is not covered by a BAA, so anything resembling a medical
+history does not belong in it. The placeholder text tells patients this; leave it in.
+
 ## Rules
 
 - Slugs are lowercase-with-hyphens and permanent once sent to a prospect.
