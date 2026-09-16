@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Wren & Ash Aesthetics | Looking like yourself, only better rested in Ashford Park</title>
+<meta name="description" content="Wren & Ash Aesthetics. A small, nurse-led practice where the person assessing your face is the person treating it. We will tell you when a treatment is not worth your money. Serving Ashford Park. Call (555) 640-2210 to book a consultation.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600&family=Jost:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --accent:#A9614B;
+    --sand:#F6F0E6;
+    --paper:#FFFCF6;
+    --ink:#2A2318;
+    --body:#5F5646;
+    --line:#E4DAC8;
+    --radius:14px;
+    --maxw:1120px;
+  }
+  *{box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{
+    margin:0;font-family:Jost,system-ui,-apple-system,sans-serif;
+    color:var(--body);background:var(--paper);line-height:1.65;font-size:17px;
+    -webkit-font-smoothing:antialiased;
+  }
+  h1,h2,h3{font-family:Fraunces,Georgia,serif;color:var(--ink);font-weight:600;
+    line-height:1.12;letter-spacing:-.015em;margin:0}
+  h1{font-size:clamp(2.1rem,5.6vw,3.6rem)}
+  h2{font-size:clamp(1.65rem,3.6vw,2.4rem)}
+  h3{font-size:1.15rem}
+  p{margin:0 0 1rem}
+  a{color:inherit}
+  img{max-width:100%;display:block}
+  .wrap{max-width:var(--maxw);margin:0 auto;padding-left:20px;padding-right:20px}
+  .section{padding-top:clamp(3rem,7vw,5rem);padding-bottom:clamp(3rem,7vw,5rem)}
+  .sand{background:var(--sand)}
+
+  /* ---- Goodstandings preview bar (remove when the practice buys) ---- */
+  .gs-bar{background:var(--ink);color:#F6F0E6;font-size:.82rem;
+    padding-top:.6rem;padding-bottom:.6rem;position:sticky;top:0;z-index:60}
+  .gs-bar .wrap{display:flex;gap:.6rem;align-items:center;justify-content:center;
+    flex-wrap:wrap;text-align:center;min-width:0}
+  .gs-bar a{color:#fff;text-decoration:underline;text-underline-offset:3px;white-space:nowrap}
+
+  /* ---- Header ---- */
+  header{background:var(--paper);border-bottom:1px solid var(--line);
+    position:sticky;top:0;z-index:50}
+  .gs-bar + header{top:38px}
+  .nav{display:flex;align-items:center;justify-content:space-between;gap:1rem;
+    padding-top:1rem;padding-bottom:1rem}
+  .brand{font-family:Fraunces,Georgia,serif;font-size:1.4rem;font-weight:600;
+    color:var(--ink);text-decoration:none;min-width:0;overflow:hidden;
+    text-overflow:ellipsis;white-space:nowrap}
+  .nav-links{display:none;gap:1.9rem;font-size:.95rem}
+  .nav-links a{text-decoration:none;color:var(--body)}
+  .nav-links a:hover{color:var(--accent)}
+  .nav > .btn{display:none}
+  .btn{display:inline-block;background:var(--accent);color:#fff;text-decoration:none;
+    font-weight:500;padding:.85rem 1.5rem;border-radius:999px;font-size:.95rem;
+    white-space:nowrap;border:1px solid var(--accent);cursor:pointer}
+  .btn:hover{filter:brightness(.93)}
+  .btn-ghost{background:transparent;color:var(--ink);border-color:var(--ink)}
+  .btn-lg{padding:1rem 1.9rem;font-size:1.02rem}
+
+  /* ---- Hero ---- */
+  .hero{background:var(--sand);position:relative;overflow:hidden}
+  .hero::after{content:"";position:absolute;inset:0;pointer-events:none;
+    background:radial-gradient(760px 340px at 82% 8%,color-mix(in srgb,var(--accent) 16%,transparent),transparent 72%)}
+  .hero .wrap{position:relative;z-index:1;
+    padding-top:clamp(2.8rem,7vw,4.8rem);padding-bottom:clamp(2.8rem,7vw,4.8rem)}
+  .eyebrow{display:inline-block;font-size:.76rem;font-weight:600;letter-spacing:.16em;
+    text-transform:uppercase;color:var(--accent);margin-bottom:1.1rem}
+  .hero h1{max-width:15ch}
+  .hero p.lede{font-size:clamp(1rem,2vw,1.15rem);max-width:50ch;margin:1.2rem 0 2rem}
+  .hero-cta{display:flex;gap:.7rem;flex-wrap:wrap}
+  .trust{display:flex;gap:1.4rem;flex-wrap:wrap;margin-top:2.4rem;padding-top:1.6rem;
+    border-top:1px solid var(--line);font-size:.87rem}
+  .trust div{display:flex;align-items:center;gap:.45rem}
+  .trust svg{flex:none;color:var(--accent)}
+
+  /* ---- Cards ---- */
+  .grid{display:grid;gap:1.2rem;grid-template-columns:1fr}
+  .card{background:var(--paper);border:1px solid var(--line);border-radius:var(--radius);padding:1.7rem}
+  .sand .card{background:var(--paper)}
+  .card h3{margin-bottom:.5rem}
+  .card p{margin:0;font-size:.96rem}
+  .card .price{display:block;margin-top:.9rem;font-size:.83rem;letter-spacing:.09em;
+    text-transform:uppercase;color:var(--accent);font-weight:600}
+  .ico{width:42px;height:42px;border-radius:50%;display:grid;place-items:center;
+    background:color-mix(in srgb,var(--accent) 13%,#fff);color:var(--accent);margin-bottom:1.1rem}
+  .section-head{max-width:54ch;margin-bottom:2.4rem}
+  .section-head p{margin-top:.85rem}
+
+  /* ---- Practitioner ---- */
+  .prac{display:grid;gap:1.6rem;grid-template-columns:1fr;align-items:center}
+  .prac-card{background:var(--paper);border:1px solid var(--line);
+    border-radius:var(--radius);padding:1.8rem}
+  .prac-name{font-family:Fraunces,Georgia,serif;font-size:1.3rem;color:var(--ink)}
+  .prac-title{font-size:.85rem;letter-spacing:.09em;text-transform:uppercase;
+    color:var(--accent);font-weight:600;margin-top:.2rem}
+
+  /* ---- Reviews ---- */
+  .quote{background:var(--paper);border:1px solid var(--line);
+    border-radius:var(--radius);padding:1.7rem}
+  .stars{color:#D9A441;letter-spacing:2px;margin-bottom:.7rem;font-size:.95rem}
+  .quote p{color:var(--ink);font-size:1rem}
+  .quote cite{font-style:normal;font-size:.87rem;font-weight:600}
+
+  /* ---- Contact ---- */
+  .contact-grid{display:grid;gap:2.4rem;grid-template-columns:1fr}
+  .info-row{display:flex;gap:.85rem;padding-top:1rem;padding-bottom:1rem;
+    border-bottom:1px solid var(--line);align-items:flex-start}
+  .info-row:last-child{border-bottom:0}
+  .info-row svg{flex:none;color:var(--accent);margin-top:3px}
+  .info-row strong{display:block;color:var(--ink);font-size:.95rem}
+  .info-row span{font-size:.93rem}
+  form{display:grid;gap:.85rem}
+  label{font-size:.83rem;font-weight:600;color:var(--ink);display:block;margin-bottom:.3rem}
+  input,textarea,select{width:100%;padding:.85rem .95rem;border:1px solid var(--line);
+    border-radius:10px;font:inherit;font-size:.95rem;background:var(--paper);color:var(--ink)}
+  input:focus,textarea:focus,select:focus{outline:2px solid var(--accent);
+    outline-offset:1px;border-color:var(--accent)}
+  textarea{min-height:110px;resize:vertical}
+  .form-note{font-size:.8rem;margin:0}
+  .privacy{font-size:.78rem;margin-top:.4rem}
+
+  footer{background:var(--ink);color:#CFC6B4;padding-top:2.4rem;padding-bottom:2.4rem;font-size:.87rem}
+  footer .wrap{display:flex;gap:1rem;justify-content:space-between;flex-wrap:wrap;
+    align-items:center;min-width:0}
+  footer a{color:#F0E9DA}
+
+  /* ---- Sticky mobile CTA ---- */
+  .bookbar{position:fixed;left:0;right:0;bottom:0;z-index:70;background:var(--accent);
+    display:flex;align-items:center;justify-content:center;gap:.5rem;padding:.95rem;
+    color:#fff;text-decoration:none;font-weight:600;box-shadow:0 -2px 16px rgba(0,0,0,.14)}
+  body{padding-bottom:56px}
+
+  @media (min-width:760px){
+    .grid{grid-template-columns:repeat(3,1fr)}
+    .nav-links{display:flex}
+    .nav > .btn{display:inline-block}
+    .prac{grid-template-columns:.85fr 1.15fr;gap:2.6rem}
+    .contact-grid{grid-template-columns:1fr 1.05fr;gap:3.2rem}
+    .bookbar{display:none}
+    body{padding-bottom:0}
+  }
+  @media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{animation:none!important;transition:none!important}}
+</style>
+</head>
+<body>
+
+<!-- PREVIEW BAR: delete this block when the site goes live on the practice's own domain -->
+<div class="gs-bar">
+  <div class="wrap">
+    <span><strong>Preview site</strong> built for Wren & Ash Aesthetics by Goodstandings.</span>
+    <a href="/">See what we do &rarr;</a>
+  </div>
+</div>
+
+<header>
+  <div class="wrap nav">
+    <a class="brand" href="#top">Wren & Ash</a>
+    <nav class="nav-links">
+      <a href="#treatments">Treatments</a>
+      <a href="#team">Our team</a>
+      <a href="#reviews">Reviews</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <a class="btn" href="#contact">Book a consultation</a>
+  </div>
+</header>
+
+<section class="hero" id="top">
+  <div class="wrap">
+    <span class="eyebrow">Ashford Park &middot; 11 years of practice</span>
+    <h1>Looking like yourself, only better rested</h1>
+    <p class="lede">A small, nurse-led practice where the person assessing your face is the person treating it. We will tell you when a treatment is not worth your money.</p>
+    <div class="hero-cta">
+      <a class="btn btn-lg" href="#contact">Book a consultation</a>
+      <a class="btn btn-ghost btn-lg" href="tel:+15556402210">(555) 640-2210</a>
+    </div>
+    <div class="trust">
+      <div><svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.9 6.3 6.9.8-5.1 4.7 1.4 6.8L12 17.3 5.9 20.6l1.4-6.8L2.2 9.1l6.9-.8z"/></svg> 4.9 stars &middot; 186 reviews</div>
+      <div><svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M9 16.2l-3.5-3.5-1.4 1.4L9 19 20 8l-1.4-1.4z"/></svg> Nurse-led, physician supervised</div>
+      <div><svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M9 16.2l-3.5-3.5-1.4 1.4L9 19 20 8l-1.4-1.4z"/></svg> No package pressure, ever</div>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="treatments">
+  <div class="wrap">
+    <div class="section-head">
+      <h2>Treatments</h2>
+      <p>We keep the menu deliberately short. Everything here is something we do often enough to do exceptionally well.</p>
+    </div>
+    <div class="grid">
+      <div class="card">
+        <div class="ico"><svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><circle cx="12" cy="12" r="9"/></svg></div>
+        <h3>Wrinkle relaxers</h3>
+        <p>Assessed in movement, not at rest, so you keep your expressions. We start conservative and refine at your two-week review.</p>
+        <span class="price">From $11 per unit</span>
+      </div>
+      <div class="card">
+        <div class="ico"><svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><circle cx="12" cy="12" r="9"/></svg></div>
+        <h3>Dermal filler</h3>
+        <p>Structural work on cheeks, chin and jawline. We map the whole face first rather than filling whichever line you noticed this morning.</p>
+        <span class="price">From $650 per syringe</span>
+      </div>
+      <div class="card">
+        <div class="ico"><svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><circle cx="12" cy="12" r="9"/></svg></div>
+        <h3>Medical-grade skin</h3>
+        <p>Microneedling, peels and a prescription routine that actually fits your week. Results build over months, and we will say so upfront.</p>
+        <span class="price">From $325 per session</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section sand" id="team">
+  <div class="wrap prac">
+    <div class="prac-card">
+      <div class="prac-name">Marta Reyes, RN, BSN</div>
+      <div class="prac-title">Founder and lead injector</div>
+      <p style="margin-top:1rem;font-size:.95rem">Eleven years injecting, the last six in her own practice. Trained in advanced facial anatomy, and teaches injection technique to other nurses twice a year. Sees every consultation personally.</p>
+    </div>
+    <div>
+      <h2>Why patients choose us</h2>
+      <p style="margin-top:.9rem">There are a dozen places within twenty minutes that will sell you the same syringe. Here is what is different about buying it here.</p>
+      <div style="margin-top:1.5rem">
+        <div class="info-row"><div><strong>You see the same face every visit</strong><span>Marta does every consultation and every treatment. No rotating roster, no handing you to whoever is free.</span></div></div>
+        <div class="info-row"><div><strong>We turn work down</strong><span>If a treatment will not get you where you want to go, we say so and explain what would. Roughly one consultation in six leaves without booking.</span></div></div>
+        <div class="info-row"><div><strong>Two-week reviews are included</strong><span>Every injectable appointment includes a follow-up to assess and adjust. It is built into the price, not sold back to you.</span></div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="reviews">
+  <div class="wrap">
+    <div class="section-head"><h2>What patients say</h2></div>
+    <div class="grid">
+      <div class="quote">
+        <div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+        <p>&ldquo;I came in asking for filler and left with a skincare plan and no appointment. Six months later she finally agreed I was ready. That is why I trust her.&rdquo;</p>
+        <cite>&mdash; Danielle K.</cite>
+      </div>
+      <div class="quote">
+        <div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+        <p>&ldquo;Third practice I have tried locally and the first where I did not feel upsold. She talked me out of the more expensive option.&rdquo;</p>
+        <cite>&mdash; Priya S.</cite>
+      </div>
+      <div class="quote">
+        <div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+        <p>&ldquo;Subtle, even, and nobody has asked what I had done. They just keep asking whether I have been on holiday.&rdquo;</p>
+        <cite>&mdash; Jordan M.</cite>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section sand" id="contact">
+  <div class="wrap">
+    <div class="contact-grid">
+      <div>
+        <h2>Book a consultation</h2>
+        <p style="margin-top:.9rem">Consultations are 30 minutes, unhurried, and there is no obligation to book anything on the day.</p>
+        <div style="margin-top:1.4rem">
+          <div class="info-row">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M6.6 10.8a15 15 0 006.6 6.6l2.2-2.2a1 1 0 011-.2 11 11 0 003.5.6 1 1 0 011 1V20a1 1 0 01-1 1A17 17 0 013 4a1 1 0 011-1h3.5a1 1 0 011 1 11 11 0 00.6 3.5 1 1 0 01-.3 1z"/></svg>
+            <div><strong>Phone</strong><span><a href="tel:+15556402210" style="text-decoration:none">(555) 640-2210</a></span></div>
+          </div>
+          <div class="info-row">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M20 4H4a2 2 0 00-2 2v12a2 2 0 002 2h16a2 2 0 002-2V6a2 2 0 00-2-2zm0 4l-8 5-8-5V6l8 5 8-5z"/></svg>
+            <div><strong>Email</strong><span><a href="mailto:hello@wrenandash.example" style="text-decoration:none">hello@wrenandash.example</a></span></div>
+          </div>
+          <div class="info-row">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a7 7 0 00-7 7c0 5.2 7 13 7 13s7-7.8 7-13a7 7 0 00-7-7zm0 9.5A2.5 2.5 0 1112 6.5a2.5 2.5 0 010 5z"/></svg>
+            <div><strong>Address</strong><span>27 Lindenwood Avenue, Suite 3, Ashford Park</span></div>
+          </div>
+          <div class="info-row">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 100 20 10 10 0 000-20zm1 10.6l4 2.3-.8 1.4-5.2-3V6h2z"/></svg>
+            <div><strong>Hours</strong><span>Tue-Fri 9am-6pm · Sat 9am-2pm · Closed Sun & Mon</span></div>
+          </div>
+        </div>
+      </div>
+
+      <div>
+        <!-- Netlify Forms: submissions land in the Netlify dashboard, no backend needed. -->
+        <form name="sample-medspa-consult" method="POST" data-netlify="true" netlify-honeypot="bot-field">
+          <input type="hidden" name="form-name" value="sample-medspa-consult">
+          <p style="display:none"><label>Leave blank: <input name="bot-field"></label></p>
+          <div>
+            <label for="name">Your name</label>
+            <input id="name" name="name" type="text" required autocomplete="name">
+          </div>
+          <div>
+            <label for="phone">Phone</label>
+            <input id="phone" name="phone" type="tel" required autocomplete="tel">
+          </div>
+          <div>
+            <label for="treatment">Treatment of interest</label>
+            <select id="treatment" name="treatment">
+              <option>Wrinkle relaxers</option>
+              <option>Dermal filler</option>
+              <option>Medical-grade skin</option>
+              <option>Not sure yet, I'd like advice</option>
+            </select>
+          </div>
+          <div>
+            <label for="message">Anything we should know?</label>
+            <textarea id="message" name="message" placeholder="Optional. Please do not include medical history here."></textarea>
+          </div>
+          <button class="btn btn-lg" type="submit">Request a consultation</button>
+          <p class="form-note">We reply within one business day.</p>
+          <p class="privacy">This form is for booking only. Please do not send medical details through it.</p>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div>&copy; <span id="yr"></span> Wren & Ash Aesthetics &middot; 27 Lindenwood Avenue, Suite 3, Ashford Park</div>
+    <div>Site by <a href="/">Goodstandings</a></div>
+  </div>
+</footer>
+
+<a class="bookbar" href="#contact">Book a consultation</a>
+
+<script>document.getElementById('yr').textContent=new Date().getFullYear();</script>
+</body>
+</html>
