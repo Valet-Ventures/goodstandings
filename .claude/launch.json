@@ -4,7 +4,7 @@
     {
       "name": "goodstandings",
       "runtimeExecutable": "python3",
-      "runtimeArgs": ["-m", "http.server", "3210", "--directory", "/Users/jens/Documents/goodstandings/public"],
+      "runtimeArgs": ["-m", "http.server", "3210", "--directory", "/Users/jens/Documents/valet-ventures/goodstandings/public"],
       "port": 3210
     }
   ]
